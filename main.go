@@ -6,7 +6,10 @@ import (
 )
 
 func main() {
-	args := os.Args[1:]
+	args := os.Args
 
-	fmt.Println(args)
+	sliceArgs := os.Args[1:]
+	data := sliceArgs[0]
+
+	fmt.Println(args, sliceArgs, data)
 }
